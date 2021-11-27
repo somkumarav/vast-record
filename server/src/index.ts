@@ -1,12 +1,15 @@
 import Express from 'express';
 import { createConnection } from 'typeorm';
+import { register } from './routes/Register';
 
 const app = Express();
 const main = async () => {
   createConnection();
   app.use(Express.json());
+  app.use(register);
+
   app.get('/', (_, res) => {
-    res.send('helo');
+    res.json({ fasdkl: 'hello' });
   });
 
   app.listen(4000, () => {

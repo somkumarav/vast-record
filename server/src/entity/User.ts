@@ -14,12 +14,12 @@ export class User extends BaseEntity {
   @Column()
   semester: string;
 
-  @Column('text', { unique: true })
+  @Column('text')
   email: string;
 
-  @Column()
+  @Column({ select: false })
   password: string;
 
-  @Column('bool', { default: false })
-  confirmed: boolean;
+  // @Column('bool', { default: false })
+  // confirmed: boolean;
 }

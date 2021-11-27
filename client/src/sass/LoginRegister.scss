@@ -1,0 +1,39 @@
+@import './config';
+
+.register {
+  background-color: $bgcolor;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    height: 45px;
+    width: 400px;
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: $secondarybgcolor;
+    color: $textcolor;
+    border-radius: 5px;
+  }
+  button {
+    height: 40px;
+    width: 400px;
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    background-color: $maincolor;
+    color: $textcolor;
+    border-radius: 5px;
+  }
+}
